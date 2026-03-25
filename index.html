@@ -88,7 +88,7 @@
     }
     </script>
     
-    <!-- ULTRA-FAST GLOBAL CSS -->
+    <!-- ULTRA-FAST GLOBAL CSS - UPDATED HERO SECTION -->
     <style>
         :root{--p:#667eea;--s:#28a745;--d:#ff6b6b;--bg:#f9f9f9;--card:#fff}
         *{box-sizing:border-box;margin:0;padding:0}
@@ -100,13 +100,65 @@
         #geo-info{position:fixed;top:12px;left:12px;right:12px;z-index:999;display:flex;justify-content:space-between;align-items:center;background:hsla(0,0%,100%,.95);backdrop-filter:blur(20px);padding:12px 20px;border-radius:20px;box-shadow:0 8px 32px hsla(0,0%,0%,.1);font-weight:600}
         #lang-select{background:none;border:1px solid #ddd;padding:8px 12px;border-radius:20px;cursor:pointer}
         
-        /* Hero */
-        .hero{background:linear-gradient(135deg,var(--p),#764ba2);color:#fff;padding:120px 20px;text-align:center;position:relative;overflow:hidden}
-        .hero h1{font-size:clamp(3rem,8vw,5.5rem);margin:0 0 24px;font-weight:800}
-        .hero-subtitle{font-size:1.3rem;max-width:700px;margin:0 auto 48px 0;opacity:.95}
-        .video-hero{position:relative;padding-bottom:56.25%;height:0;max-width:900px;margin:48px auto;border-radius:20px;overflow:hidden;box-shadow:0 32px 80px hsla(0,0%,0%,.4)}
+        /* UPDATED HERO - 25% SMALLER CLICKABLE HEADLINE */
+        .hero{background:linear-gradient(135deg,var(--p),#764ba2);color:#fff;padding:140px 20px 80px;text-align:center;position:relative;overflow:hidden}
+        
+        /* CLICKABLE HEADLINE - 25% SMALLER */
+        .hero-headline{position:relative;z-index:2;margin-bottom:32px}
+        .hero-headline h1{
+            font-size:clamp(2.25rem,6vw,4rem) !important; /* 25% SMALLER than original */
+            margin:0;
+            font-weight:800;
+            cursor:pointer;
+            display:inline-block;
+            padding:20px 40px;
+            background:hsla(0,0%,100%,.15);
+            backdrop-filter:blur(10px);
+            border-radius:20px;
+            border:2px solid hsla(0,0%,100%,.3);
+            transition:all .3s ease;
+            text-decoration:none;
+            color:#fff !important;
+            box-shadow:0 8px 32px hsla(0,0%,0%,.2)
+        }
+        .hero-headline h1:hover{
+            background:hsla(0,0%,100%,.25);
+            transform:translateY(-4px) scale(1.02);
+            box-shadow:0 20px 48px hsla(0,0%,0%,.3);
+            text-decoration:none
+        }
+        
+        /* NEW INFORMATIVE CONTENT ABOVE VIDEO */
+        .hero-info{
+            max-width:850px;
+            margin:0 auto 72px;
+            background:hsla(0,0%,100%,.12);
+            backdrop-filter:blur(20px);
+            padding:36px;
+            border-radius:24px;
+            border:1px solid hsla(0,0%,100%,.2);
+            font-size:1.15rem;
+            line-height:1.7;
+            box-shadow:0 8px 32px hsla(0,0%,0%,.15)
+        }
+        .hero-info strong{color:#fff;font-weight:800}
+        
+        .hero-subtitle{display:none} /* Hiding original subtitle since we have new info box */
+        
+        /* VIDEO - MOVED DOWN, SAME SIZE */
+        .video-hero{
+            position:relative;
+            padding-bottom:56.25%; /* SAME SIZE */
+            height:0;
+            max-width:900px;
+            margin:72px auto 0; /* MOVED DOWN */
+            border-radius:20px;
+            overflow:hidden;
+            box-shadow:0 32px 80px hsla(0,0%,0%,.4)
+        }
         .video-hero iframe{position:absolute;top:0;left:0;width:100%;height:100%}
-        .hero-ctas{display:flex;justify-content:center;gap:24px;flex-wrap:wrap;margin-top:56px}
+        
+        .hero-ctas{display:flex;justify-content:center;gap:24px;flex-wrap:wrap;margin-top:72px}
         .cta{display:inline-flex;align-items:center;gap:12px;background:linear-gradient(45deg,var(--d),#ff8e8e);color:#fff !important;padding:24px 48px;border-radius:50px;font-weight:800;font-size:1.15rem;text-decoration:none;box-shadow:0 16px 48px hsla(7,100%,67%,.5);transition:all .3s}
         .cta:hover{transform:translateY(-4px);box-shadow:0 24px 64px hsla(7,100%,67%,.6)}
         .cta-secondary{background:hsla(0,0%,100%,.25);border:1px solid hsla(0,0%,100%,.4)}
@@ -149,9 +201,11 @@
         .footer-links a{color:#3498db;font-weight:600}
         
         @media (max-width:768px){
+            .hero{padding:120px 20px 60px}
             .hero-ctas{flex-direction:column;align-items:center}
-            .features-grid{grid-template-columns:1fr}
             #geo-info{flex-direction:column;gap:12px}
+            .hero-info{padding:24px;font-size:1rem}
+            .hero-headline h1{padding:16px 24px}
         }
     </style>
 </head>
@@ -169,12 +223,26 @@
         </select>
     </div>
 
-    <!-- GLOBAL HERO -->
+    <!-- UPDATED GLOBAL HERO -->
     <section class="hero">
         <div class="container">
-            <h1 id="hero-title">Movavi Video Editor 2026</h1>
-            <p id="hero-subtitle" class="hero-subtitle">#1 Worldwide AI Video Editing Software - Lifetime License, 10K+ Effects, 20+ Languages</p>
+            <!-- CLICKABLE HEADLINE -->
+            <div class="hero-headline">
+                <a id="hero-title-link" href="https://www.linkconnector.com/ta.php?lc=007949108972006513&atid=MovaviWeb" rel="sponsored nofollow noopener">
+                    <h1 id="hero-title">Movavi Video Editor 2026</h1>
+                </a>
+            </div>
             
+            <!-- NEW INFORMATIVE CONTENT -->
+            <div class="hero-info">
+                <strong>🌍 World's #1 AI Video Editor:</strong> Lifetime license beats all subscriptions. 
+                <strong>10,000+ professional effects</strong> included forever. 
+                <strong>20+ language AI auto-subtitles</strong> for global creators. 
+                Windows/Mac optimized with <strong>drag-and-drop simplicity</strong>. 
+                Free trial - no credit card required.
+            </div>
+            
+            <!-- VIDEO - MOVED DOWN -->
             <div class="video-hero">
                 <iframe src="https://www.youtube.com/embed/aUWIC4eX14g?rel=0&modestbranding=1&playsinline=1" 
                         title="Movavi Video Editor 2026 Global Demo" 
@@ -349,7 +417,6 @@
                 const loc = localizations[country_code] || localizations['US'] || {title: 'Movavi Video Editor 2026', cta: 'Free Trial Worldwide', subtitle: 'Global #1'};
                 
                 document.getElementById('hero-title').textContent = loc.title;
-                document.getElementById('hero-subtitle').textContent = loc.subtitle;
                 document.getElementById('hero-cta').textContent = loc.cta;
                 document.getElementById('final-cta').textContent = loc.cta;
                 
@@ -369,12 +436,8 @@
             const url = new URL(window.location);
             url.searchParams.set('lang', lang);
             window.history.replaceState({}, '', url);
-            // Trigger content swap (extend with full translations)
             document.documentElement.lang = lang;
         };
-        
-        // 6. GLOBAL ANALYTICS READY
-        // Google Analytics 4, Yandex Metrika, Baidu Tongji compatible
         
         // INIT
         localizeByGeo();
