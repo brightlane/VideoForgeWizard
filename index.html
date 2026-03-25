@@ -88,7 +88,7 @@
     }
     </script>
     
-    <!-- ULTRA-FAST GLOBAL CSS - UPDATED HERO SECTION -->
+    <!-- ULTRA-FAST GLOBAL CSS - ALL BOXES CLICKABLE -->
     <style>
         :root{--p:#667eea;--s:#28a745;--d:#ff6b6b;--bg:#f9f9f9;--card:#fff}
         *{box-sizing:border-box;margin:0;padding:0}
@@ -102,11 +102,9 @@
         
         /* UPDATED HERO - 25% SMALLER CLICKABLE HEADLINE */
         .hero{background:linear-gradient(135deg,var(--p),#764ba2);color:#fff;padding:140px 20px 80px;text-align:center;position:relative;overflow:hidden}
-        
-        /* CLICKABLE HEADLINE - 25% SMALLER */
         .hero-headline{position:relative;z-index:2;margin-bottom:32px}
         .hero-headline h1{
-            font-size:clamp(2.25rem,6vw,4rem) !important; /* 25% SMALLER than original */
+            font-size:clamp(2.25rem,6vw,4rem) !important;
             margin:0;
             font-weight:800;
             cursor:pointer;
@@ -128,7 +126,7 @@
             text-decoration:none
         }
         
-        /* NEW INFORMATIVE CONTENT ABOVE VIDEO */
+        /* NEW INFORMATIVE CONTENT ABOVE VIDEO - CLICKABLE */
         .hero-info{
             max-width:850px;
             margin:0 auto 72px;
@@ -139,19 +137,20 @@
             border:1px solid hsla(0,0%,100%,.2);
             font-size:1.15rem;
             line-height:1.7;
-            box-shadow:0 8px 32px hsla(0,0%,0%,.15)
+            box-shadow:0 8px 32px hsla(0,0%,0%,.15);
+            cursor:pointer;
+            transition:all .3s;
         }
+        .hero-info:hover{transform:translateY(-4px);box-shadow:0 16px 48px hsla(0,0%,0%,.25)}
         .hero-info strong{color:#fff;font-weight:800}
         
-        .hero-subtitle{display:none} /* Hiding original subtitle since we have new info box */
-        
-        /* VIDEO - MOVED DOWN, SAME SIZE */
+        .hero-subtitle{display:none}
         .video-hero{
             position:relative;
-            padding-bottom:56.25%; /* SAME SIZE */
+            padding-bottom:56.25%;
             height:0;
             max-width:900px;
-            margin:72px auto 0; /* MOVED DOWN */
+            margin:72px auto 0;
             border-radius:20px;
             overflow:hidden;
             box-shadow:0 32px 80px hsla(0,0%,0%,.4)
@@ -167,21 +166,23 @@
         .section{padding:100px 0;background:var(--card);margin:20px 0;border-radius:24px;box-shadow:0 12px 48px hsla(0,0%,0%,.06)}
         .section h2{font-size:clamp(2.5rem,6vw,4rem);text-align:center;color:#333;margin-bottom:64px;font-weight:700}
         
-        /* Features */
+        /* Features - FULLY CLICKABLE */
         .features-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(360px,1fr));gap:40px;list-style:none;padding:0}
-        .feature{padding:48px;border-radius:20px;background:linear-gradient(135deg,#f8faff,#f4f8ff);border:1px solid hsla(225,100%,97%,.8);transition:all .4s;box-shadow:0 8px 32px hsla(0,0%,0%,.08)}
+        .feature{position:relative;cursor:pointer;transition:all .4s}
         .feature:hover{transform:translateY(-8px);box-shadow:0 24px 64px hsla(0,0%,0%,.12)}
         .feature h3{font-size:1.5rem;margin-bottom:16px;color:var(--p)}
+        .feature-overlay{position:absolute;top:0;left:0;right:0;bottom:0;background:rgba(102,126,234,.02);border-radius:20px;z-index:1}
         
         /* Comparison */
-        .comparison-table{width:100%;border-collapse:collapse;margin:48px 0;border-radius:20px;overflow:hidden;box-shadow:0 16px 48px hsla(0,0%,0%,.1)}
+        .comparison-table{width:100%;border-collapse:collapse;margin:48px 0;border-radius:20px;overflow:hidden;box-shadow:0 16px 48px hsla(0,0%,0%,.1);cursor:pointer}
         .comparison-table th{background:linear-gradient(135deg,var(--p),#764ba2);color:#fff;padding:24px;font-weight:700;text-align:center}
         .comparison-table td{padding:24px;border-bottom:2px solid #f0f4ff;text-align:center;font-weight:500}
         .comparison-table tbody tr:hover{background:#f8fbff}
         
         /* Trust */
         .trust-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:32px;margin-top:48px}
-        .trust-card{padding:40px;border-radius:20px;background:var(--card);box-shadow:0 12px 40px hsla(0,0%,0%,.08);text-align:center}
+        .trust-card{position:relative;cursor:pointer;padding:40px;border-radius:20px;background:var(--card);box-shadow:0 12px 40px hsla(0,0%,0%,.08);text-align:center;transition:all .3s}
+        .trust-card:hover{transform:translateY(-6px);box-shadow:0 20px 60px hsla(0,0%,0%,.15)}
         .trust-badge{background:var(--s);color:#fff;padding:16px 32px;border-radius:50px;font-weight:800;display:inline-block;margin-bottom:24px;box-shadow:0 8px 24px hsla(160,100%,35%,.3)}
         
         /* FAQ */
@@ -233,16 +234,16 @@
                 </a>
             </div>
             
-            <!-- NEW INFORMATIVE CONTENT -->
-            <div class="hero-info">
+            <!-- CLICKABLE INFO BOX -->
+            <a href="https://www.linkconnector.com/ta.php?lc=007949108972006513&atid=MovaviWeb" class="hero-info" rel="sponsored nofollow noopener">
                 <strong>🌍 World's #1 AI Video Editor:</strong> Lifetime license beats all subscriptions. 
                 <strong>10,000+ professional effects</strong> included forever. 
                 <strong>20+ language AI auto-subtitles</strong> for global creators. 
                 Windows/Mac optimized with <strong>drag-and-drop simplicity</strong>. 
                 Free trial - no credit card required.
-            </div>
+            </a>
             
-            <!-- VIDEO - MOVED DOWN -->
+            <!-- VIDEO -->
             <div class="video-hero">
                 <iframe src="https://www.youtube.com/embed/aUWIC4eX14g?rel=0&modestbranding=1&playsinline=1" 
                         title="Movavi Video Editor 2026 Global Demo" 
@@ -260,24 +261,32 @@
         </div>
     </section>
 
-    <!-- FEATURES -->
+    <!-- FEATURES - ALL CLICKABLE -->
     <section id="features" class="section">
         <div class="container">
             <h2 id="features-h2">Why Movavi Dominates Globally</h2>
             <ul class="features-grid">
                 <li class="feature">
+                    <a href="https://www.linkconnector.com/ta.php?lc=007949108972006513&atid=MovaviWeb" rel="sponsored nofollow noopener" class="feature-link"></a>
+                    <div class="feature-overlay"></div>
                     <h3>🎯 Universal Beginner Interface</h3>
                     <p>Drag-and-drop works perfectly worldwide - no learning curve, instant pro results.</p>
                 </li>
                 <li class="feature">
+                    <a href="https://www.linkconnector.com/ta.php?lc=007949108972006513&atid=MovaviWeb" rel="sponsored nofollow noopener" class="feature-link"></a>
+                    <div class="feature-overlay"></div>
                     <h3>🤖 AI in 20+ Languages</h3>
                     <p>Auto-subtitles, background removal, motion tracking - English, Spanish, Chinese, Russian + more.</p>
                 </li>
                 <li class="feature">
+                    <a href="https://www.linkconnector.com/ta.php?lc=007949108972006513&atid=MovaviWeb" rel="sponsored nofollow noopener" class="feature-link"></a>
+                    <div class="feature-overlay"></div>
                     <h3>✨ 10K+ Effects Included</h3>
                     <p>Transitions, stickers, music library - lifetime access, no regional blocks.</p>
                 </li>
                 <li class="feature">
+                    <a href="https://www.linkconnector.com/ta.php?lc=007949108972006513&atid=MovaviWeb" rel="sponsored nofollow noopener" class="feature-link"></a>
+                    <div class="feature-overlay"></div>
                     <h3>💰 Multi-Currency Pricing</h3>
                     <p>USD $59.95 | EUR €69 | GBP £59 | RUB 4990₽ - one-time payment worldwide.</p>
                 </li>
@@ -285,44 +294,49 @@
         </div>
     </section>
 
-    <!-- COMPARISON -->
+    <!-- COMPARISON - FULL TABLE CLICKABLE -->
     <section class="section">
         <div class="container">
             <h2>Global Comparison - Movavi Wins</h2>
-            <table class="comparison-table">
-                <thead>
-                    <tr>
-                        <th>Feature</th>
-                        <th>🏆 Movavi 2026</th>
-                        <th>Filmora</th>
-                        <th>Adobe Premiere</th>
-                        <th>DaVinci Resolve</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr><td>Lifetime License</td><td>✅ Worldwide</td><td>❌ Subscription</td><td>❌ $$$ Monthly</td><td>⚠️ Free Limited</td></tr>
-                    <tr><td>AI Languages</td><td>✅ 20+ Global</td><td>⚠️ Basic</td><td>❌ Pro Addons</td><td>❌ Complex</td></tr>
-                    <tr><td>Effects Library</td><td>✅ 10K+ Included</td><td>⚠️ Some Paid</td><td>❌ Subscription</td><td>✅ Free/Pro</td></tr>
-                    <tr><td>Global Rating</td><td>⭐⭐⭐⭐⭐ 4.8</td><td>⭐⭐⭐⭐ 4.2</td><td>⭐⭐⭐ 3.5</td><td>⭐⭐⭐⭐ 4.0</td></tr>
-                </tbody>
-            </table>
+            <a href="https://www.linkconnector.com/ta.php?lc=007949108972006513&atid=MovaviWeb" class="comparison-table-wrapper" rel="sponsored nofollow noopener">
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Feature</th>
+                            <th>🏆 Movavi 2026</th>
+                            <th>Filmora</th>
+                            <th>Adobe Premiere</th>
+                            <th>DaVinci Resolve</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Lifetime License</td><td>✅ Worldwide</td><td>❌ Subscription</td><td>❌ $$$ Monthly</td><td>⚠️ Free Limited</td></tr>
+                        <tr><td>AI Languages</td><td>✅ 20+ Global</td><td>⚠️ Basic</td><td>❌ Pro Addons</td><td>❌ Complex</td></tr>
+                        <tr><td>Effects Library</td><td>✅ 10K+ Included</td><td>⚠️ Some Paid</td><td>❌ Subscription</td><td>✅ Free/Pro</td></tr>
+                        <tr><td>Global Rating</td><td>⭐⭐⭐⭐⭐ 4.8</td><td>⭐⭐⭐⭐ 4.2</td><td>⭐⭐⭐ 3.5</td><td>⭐⭐⭐⭐ 4.0</td></tr>
+                    </tbody>
+                </table>
+            </a>
         </div>
     </section>
 
-    <!-- TRUST -->
+    <!-- TRUST - ALL CARDS CLICKABLE -->
     <section class="section">
         <div class="container">
             <h2>Trusted by 5M+ Creators Worldwide</h2>
             <div class="trust-grid">
                 <div class="trust-card">
+                    <a href="https://www.linkconnector.com/ta.php?lc=007949108972006513&atid=MovaviWeb" rel="sponsored nofollow noopener" class="trust-link"></a>
                     <div class="trust-badge">⭐ 4.8/5 | 25K+ Reviews</div>
                     <p>Global user rating across all app stores</p>
                 </div>
                 <div class="trust-card">
+                    <a href="https://www.linkconnector.com/ta.php?lc=007949108972006513&atid=MovaviWeb" rel="sponsored nofollow noopener" class="trust-link"></a>
                     <div class="trust-badge">🌍 150+ Countries</div>
                     <p>Used from USA to China to Russia</p>
                 </div>
                 <div class="trust-card">
+                    <a href="https://www.linkconnector.com/ta.php?lc=007949108972006513&atid=MovaviWeb" rel="sponsored nofollow noopener" class="trust-link"></a>
                     <div class="trust-badge">✅ Lifetime Guarantee</div>
                     <p>One payment, updates forever</p>
                 </div>
@@ -438,6 +452,24 @@
             window.history.replaceState({}, '', url);
             document.documentElement.lang = lang;
         };
+        
+        // 6. MAKE FEATURES CLICKABLE
+        document.querySelectorAll('.feature').forEach(feature => {
+            feature.addEventListener('click', (e) => {
+                if (!e.target.closest('a')) {
+                    window.open('https://www.linkconnector.com/ta.php?lc=007949108972006513&atid=MovaviWeb', '_blank', 'noopener,noreferrer');
+                }
+            });
+        });
+        
+        // 7. MAKE TRUST CARDS CLICKABLE
+        document.querySelectorAll('.trust-card').forEach(card => {
+            card.addEventListener('click', (e) => {
+                if (!e.target.closest('a')) {
+                    window.open('https://www.linkconnector.com/ta.php?lc=007949108972006513&atid=MovaviWeb', '_blank', 'noopener,noreferrer');
+                }
+            });
+        });
         
         // INIT
         localizeByGeo();
