@@ -126,23 +126,31 @@
             text-decoration:none
         }
         
-        /* NEW INFORMATIVE CONTENT ABOVE VIDEO - CLICKABLE */
+        /* NEW INFORMATIVE CONTENT ABOVE VIDEO - CLICKABLE (VISUAL REPAIR) */
         .hero-info{
             max-width:850px;
             margin:0 auto 72px;
-            background:hsla(0,0%,100%,.12);
-            backdrop-filter:blur(20px);
-            padding:36px;
+            background:hsla(0,0%,100%,.15);
+            backdrop-filter:blur(24px);
+            padding:40px 36px;
             border-radius:24px;
-            border:1px solid hsla(0,0%,100%,.2);
-            font-size:1.15rem;
-            line-height:1.7;
-            box-shadow:0 8px 32px hsla(0,0%,0%,.15);
+            border:1px solid hsla(0,0%,100%,.25);
+            font-size:1.18rem;
+            line-height:1.75;
+            font-weight:400;
+            box-shadow:0 12px 48px hsla(0,0%,0%,.18);
             cursor:pointer;
-            transition:all .3s;
+            transition:transform .3s, box-shadow .3s, background .3s;
         }
-        .hero-info:hover{transform:translateY(-4px);box-shadow:0 16px 48px hsla(0,0%,0%,.25)}
-        .hero-info strong{color:#fff;font-weight:800}
+        .hero-info:hover{
+            transform:translateY(-6px);
+            box-shadow:0 24px 64px hsla(0,0%,0%,.28);
+            background:hsla(0,0%,100%,.22);
+        }
+        .hero-info strong{
+            color:#fff;
+            font-weight:700;
+        }
         
         .hero-subtitle{display:none}
         .video-hero{
@@ -239,240 +247,4 @@
                 <strong>🌍 World's #1 AI Video Editor:</strong> Lifetime license beats all subscriptions. 
                 <strong>10,000+ professional effects</strong> included forever. 
                 <strong>20+ language AI auto-subtitles</strong> for global creators. 
-                Windows/Mac optimized with <strong>drag-and-drop simplicity</strong>. 
-                Free trial - no credit card required.
-            </a>
-            
-            <!-- VIDEO -->
-            <div class="video-hero">
-                <iframe src="https://www.youtube.com/embed/aUWIC4eX14g?rel=0&modestbranding=1&playsinline=1" 
-                        title="Movavi Video Editor 2026 Global Demo" 
-                        frameborder="0" 
-                        allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture" 
-                        allowfullscreen 
-                        loading="lazy">
-                </iframe>
-            </div>
-            
-            <div class="hero-ctas">
-                <a id="hero-cta" href="https://www.linkconnector.com/ta.php?lc=007949108972006513&atid=MovaviWeb" class="cta" rel="sponsored nofollow noopener">🚀 Start Free Trial</a>
-                <a href="#features" class="cta cta-secondary" onclick="scrollTo('features')">Explore Features</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- FEATURES - ALL CLICKABLE -->
-    <section id="features" class="section">
-        <div class="container">
-            <h2 id="features-h2">Why Movavi Dominates Globally</h2>
-            <ul class="features-grid">
-                <li class="feature">
-                    <a href="https://www.linkconnector.com/ta.php?lc=007949108972006513&atid=MovaviWeb" rel="sponsored nofollow noopener" class="feature-link"></a>
-                    <div class="feature-overlay"></div>
-                    <h3>🎯 Universal Beginner Interface</h3>
-                    <p>Drag-and-drop works perfectly worldwide - no learning curve, instant pro results.</p>
-                </li>
-                <li class="feature">
-                    <a href="https://www.linkconnector.com/ta.php?lc=007949108972006513&atid=MovaviWeb" rel="sponsored nofollow noopener" class="feature-link"></a>
-                    <div class="feature-overlay"></div>
-                    <h3>🤖 AI in 20+ Languages</h3>
-                    <p>Auto-subtitles, background removal, motion tracking - English, Spanish, Chinese, Russian + more.</p>
-                </li>
-                <li class="feature">
-                    <a href="https://www.linkconnector.com/ta.php?lc=007949108972006513&atid=MovaviWeb" rel="sponsored nofollow noopener" class="feature-link"></a>
-                    <div class="feature-overlay"></div>
-                    <h3>✨ 10K+ Effects Included</h3>
-                    <p>Transitions, stickers, music library - lifetime access, no regional blocks.</p>
-                </li>
-                <li class="feature">
-                    <a href="https://www.linkconnector.com/ta.php?lc=007949108972006513&atid=MovaviWeb" rel="sponsored nofollow noopener" class="feature-link"></a>
-                    <div class="feature-overlay"></div>
-                    <h3>💰 Multi-Currency Pricing</h3>
-                    <p>USD $59.95 | EUR €69 | GBP £59 | RUB 4990₽ - one-time payment worldwide.</p>
-                </li>
-            </ul>
-        </div>
-    </section>
-
-    <!-- COMPARISON - FULL TABLE CLICKABLE -->
-    <section class="section">
-        <div class="container">
-            <h2>Global Comparison - Movavi Wins</h2>
-            <a href="https://www.linkconnector.com/ta.php?lc=007949108972006513&atid=MovaviWeb" class="comparison-table-wrapper" rel="sponsored nofollow noopener">
-                <table class="comparison-table">
-                    <thead>
-                        <tr>
-                            <th>Feature</th>
-                            <th>🏆 Movavi 2026</th>
-                            <th>Filmora</th>
-                            <th>Adobe Premiere</th>
-                            <th>DaVinci Resolve</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr><td>Lifetime License</td><td>✅ Worldwide</td><td>❌ Subscription</td><td>❌ $$$ Monthly</td><td>⚠️ Free Limited</td></tr>
-                        <tr><td>AI Languages</td><td>✅ 20+ Global</td><td>⚠️ Basic</td><td>❌ Pro Addons</td><td>❌ Complex</td></tr>
-                        <tr><td>Effects Library</td><td>✅ 10K+ Included</td><td>⚠️ Some Paid</td><td>❌ Subscription</td><td>✅ Free/Pro</td></tr>
-                        <tr><td>Global Rating</td><td>⭐⭐⭐⭐⭐ 4.8</td><td>⭐⭐⭐⭐ 4.2</td><td>⭐⭐⭐ 3.5</td><td>⭐⭐⭐⭐ 4.0</td></tr>
-                    </tbody>
-                </table>
-            </a>
-        </div>
-    </section>
-
-    <!-- TRUST - ALL CARDS CLICKABLE -->
-    <section class="section">
-        <div class="container">
-            <h2>Trusted by 5M+ Creators Worldwide</h2>
-            <div class="trust-grid">
-                <div class="trust-card">
-                    <a href="https://www.linkconnector.com/ta.php?lc=007949108972006513&atid=MovaviWeb" rel="sponsored nofollow noopener" class="trust-link"></a>
-                    <div class="trust-badge">⭐ 4.8/5 | 25K+ Reviews</div>
-                    <p>Global user rating across all app stores</p>
-                </div>
-                <div class="trust-card">
-                    <a href="https://www.linkconnector.com/ta.php?lc=007949108972006513&atid=MovaviWeb" rel="sponsored nofollow noopener" class="trust-link"></a>
-                    <div class="trust-badge">🌍 150+ Countries</div>
-                    <p>Used from USA to China to Russia</p>
-                </div>
-                <div class="trust-card">
-                    <a href="https://www.linkconnector.com/ta.php?lc=007949108972006513&atid=MovaviWeb" rel="sponsored nofollow noopener" class="trust-link"></a>
-                    <div class="trust-badge">✅ Lifetime Guarantee</div>
-                    <p>One payment, updates forever</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FAQ -->
-    <section class="section">
-        <div class="container">
-            <h2>Global FAQ</h2>
-            <div class="faq-list">
-                <div class="faq-item">
-                    <div class="faq-q">Best video editor worldwide? <span>▶</span></div>
-                    <div class="faq-a">Movavi Video Editor 2026 - works perfectly everywhere with lifetime license.</div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-q">Multi-language support? <span>▶</span></div>
-                    <div class="faq-a">Yes! AI subtitles in 20+ languages including English, Chinese, Spanish, Russian, Arabic.</div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-q">Works on all computers? <span>▶</span></div>
-                    <div class="faq-a">Windows, Mac - global compatibility with 4K/8K support.</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FINAL GLOBAL CTA -->
-    <section class="final-cta">
-        <div class="container">
-            <h2 style="font-size:clamp(3rem,8vw,5rem);margin-bottom:32px">Ready to Edit Like a Pro?</h2>
-            <p style="font-size:1.4rem;margin-bottom:56px;max-width:700px;margin-inline:auto">Join 5M+ creators worldwide. Free trial available globally.</p>
-            <a id="final-cta" href="https://www.linkconnector.com/ta.php?lc=007949108972006513&atid=MovaviWeb" class="cta" style="font-size:1.3rem;padding:28px 64px">🌍 Download Free Trial Worldwide</a>
-        </div>
-    </section>
-
-    <!-- GLOBAL FOOTER -->
-    <footer class="footer">
-        <div class="container">
-            <p style="margin-bottom:24px">&copy; <span id="current-year"></span> Movavi Video Editor Global. All rights reserved worldwide.</p>
-            <div class="footer-links">
-                <a href="https://www.movavi.com/contact-us.html" target="_blank">Contact</a>
-                <a href="https://www.movavi.com/privacy-policy.html" target="_blank">Privacy Policy</a>
-                <a href="https://www.movavi.com/terms-of-service.html" target="_blank">Terms</a>
-                <a href="#features">Features</a>
-            </div>
-            <p style="opacity:.8;margin-top:32px">Official Global Affiliate Partner | 
-                <a href="https://www.linkconnector.com/ta.php?lc=007949108972006513&atid=MovaviWeb" rel="nofollow noopener">Movavi 2026 Download</a>
-            </p>
-        </div>
-    </footer>
-
-    <!-- GLOBAL RANKING JAVASCRIPT -->
-    <script>
-        // 1. AUTO YEAR
-        document.getElementById('current-year').textContent = new Date().getFullYear();
-        
-        // 2. SMOOTH SCROLL
-        function scrollTo(id) {
-            document.getElementById(id)?.scrollIntoView({behavior:'smooth',block:'start'});
-        }
-        
-        // 3. FAQ TOGGLE
-        document.querySelectorAll('.faq-q').forEach(q => {
-            q.onclick = () => {
-                const a = q.nextElementSibling;
-                a.classList.toggle('active');
-                q.lastElementChild.textContent = a.classList.contains('active') ? '▼' : '▶';
-            }
-        });
-        
-        // 4. REAL-TIME GEO LOCALIZATION
-        async function localizeByGeo() {
-            try {
-                const res = await fetch('https://ipapi.co/json/?fields=country_name,country_code,currency,continent_name');
-                const {country_name, country_code, currency, continent_name} = await res.json();
-                
-                const geoSpan = document.getElementById('geo-location');
-                geoSpan.innerHTML = `🌍 Welcome from <strong>${country_name}</strong> (${currency})`;
-                
-                // DYNAMIC LOCALIZED CONTENT
-                const localizations = {
-                    'US': {title: 'Movavi 2026 - #1 USA Video Editor', cta: 'Free Trial (USD)', subtitle: '#1 American Choice'},
-                    'GB': {title: 'Movavi 2026 - Best UK Video Editor', cta: 'Free Trial (GBP)', subtitle: 'Top UK Pick'},
-                    'DE': {title: 'Movavi 2026 - Bester Video Editor DE', cta: 'Kostenlos Testen (EUR)', subtitle: 'Deutschlands Favorit'},
-                    'FR': {title: 'Movavi 2026 - Meilleur Logiciel FR', cta: 'Essai Gratuit (EUR)', subtitle: 'Choix Français #1'},
-                    'RU': {title: 'Movavi 2026 - Лучший Видеоредактор', cta: 'Бесплатный Триал (RUB)', subtitle: 'Лидер в России'},
-                    'CN': {title: 'Movavi 2026 - 全球最佳视频编辑器', cta: '免费试用 (CNY)', subtitle: '全球第一选择'}
-                };
-                
-                const loc = localizations[country_code] || localizations['US'] || {title: 'Movavi Video Editor 2026', cta: 'Free Trial Worldwide', subtitle: 'Global #1'};
-                
-                document.getElementById('hero-title').textContent = loc.title;
-                document.getElementById('hero-cta').textContent = loc.cta;
-                document.getElementById('final-cta').textContent = loc.cta;
-                
-                // Update URL for SEO
-                const url = new URL(window.location);
-                url.searchParams.set('country', country_code);
-                window.history.replaceState({}, '', url);
-                
-            } catch(e) {
-                document.getElementById('geo-location').textContent = '🌍 Worldwide Access';
-            }
-        }
-        
-        // 5. LANGUAGE SWITCHER
-        document.getElementById('lang-select').onchange = function(e) {
-            const lang = e.target.value;
-            const url = new URL(window.location);
-            url.searchParams.set('lang', lang);
-            window.history.replaceState({}, '', url);
-            document.documentElement.lang = lang;
-        };
-        
-        // 6. MAKE FEATURES CLICKABLE
-        document.querySelectorAll('.feature').forEach(feature => {
-            feature.addEventListener('click', (e) => {
-                if (!e.target.closest('a')) {
-                    window.open('https://www.linkconnector.com/ta.php?lc=007949108972006513&atid=MovaviWeb', '_blank', 'noopener,noreferrer');
-                }
-            });
-        });
-        
-        // 7. MAKE TRUST CARDS CLICKABLE
-        document.querySelectorAll('.trust-card').forEach(card => {
-            card.addEventListener('click', (e) => {
-                if (!e.target.closest('a')) {
-                    window.open('https://www.linkconnector.com/ta.php?lc=007949108972006513&atid=MovaviWeb', '_blank', 'noopener,noreferrer');
-                }
-            });
-        });
-        
-        // INIT
-        localizeByGeo();
-    </script>
-</body>
-</html>
+                Windows/Mac optimized with <strong>drag-and-drop
